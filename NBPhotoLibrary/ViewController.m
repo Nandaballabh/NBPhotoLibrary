@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "PhotoLibraryManager.h"
 
-@interface ViewController ()
+@interface ViewController ()<PhotoLibraryManagerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -22,6 +24,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)photoTapped:(id)sender {
+    PhotoLibraryManager * photoLibrary = [PhotoLibraryManager instance];
+    photoLibrary.delegate = self;
+    photoLibrary.controller = self;
+    [photoLibrary openPhotoLibrary];
+}
+
+#pragma - mark PhotoLibraryManagerDelegate methods
+
+- (void)photoLibraryImageCropController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect {
+    self.imageView.image = croppedImage;
 }
 
 @end
