@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.source       = { :git => "https://github.com/Nandaballabh/NBPhotoLibrary.git",:tag => s.version.to_s}
   s.requires_arc = true
-  s.source_files = 'NBPhotoLibrary/*'
+  s.source_files = 'NBPhotoLibrary/NBPhotoLibrary/*'
   s.dependency "RSKImageCropper"
 end
