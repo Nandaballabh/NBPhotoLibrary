@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A50E6402E2F592B6D9B71A68 /* libPods-NBPhotoLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE64210CE0F278482E23C72 /* libPods-NBPhotoLibrary.a */; };
 		B8E7CEC51EEEA0C3005EFBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC41EEEA0C3005EFBC9 /* main.m */; };
 		B8E7CEC81EEEA0C3005EFBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC71EEEA0C3005EFBC9 /* AppDelegate.m */; };
 		B8E7CECB1EEEA0C3005EFBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CECA1EEEA0C3005EFBC9 /* ViewController.m */; };
@@ -18,8 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83BA66347EF50BF092B9F439 /* Pods-NBPhotoLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPhotoLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary.debug.xcconfig"; sourceTree = "<group>"; };
-		9235C433FAB87FB8E720EFEA /* Pods-NBPhotoLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPhotoLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		B8E7CEC01EEEA0C3005EFBC9 /* NBPhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E7CEC41EEEA0C3005EFBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8E7CEC61EEEA0C3005EFBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,7 +29,6 @@
 		B8E7CED41EEEA0C3005EFBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8E7CEDC1EEEA0F3005EFBC9 /* PhotoLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryManager.h; sourceTree = "<group>"; };
 		B8E7CEDD1EEEA0F3005EFBC9 /* PhotoLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryManager.m; sourceTree = "<group>"; };
-		BEE64210CE0F278482E23C72 /* libPods-NBPhotoLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBPhotoLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,28 +36,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50E6402E2F592B6D9B71A68 /* libPods-NBPhotoLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25575FE28A99209F6288D913 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BEE64210CE0F278482E23C72 /* libPods-NBPhotoLibrary.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B8E7CEB71EEEA0C3005EFBC9 = {
 			isa = PBXGroup;
 			children = (
 				B8E7CEC21EEEA0C3005EFBC9 /* NBPhotoLibrary */,
 				B8E7CEC11EEEA0C3005EFBC9 /* Products */,
-				E480729043DCA4A2CFE0FD93 /* Pods */,
-				25575FE28A99209F6288D913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,15 +92,6 @@
 			path = NBPhotoLibrary;
 			sourceTree = "<group>";
 		};
-		E480729043DCA4A2CFE0FD93 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83BA66347EF50BF092B9F439 /* Pods-NBPhotoLibrary.debug.xcconfig */,
-				9235C433FAB87FB8E720EFEA /* Pods-NBPhotoLibrary.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,12 +99,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8E7CED71EEEA0C3005EFBC9 /* Build configuration list for PBXNativeTarget "NBPhotoLibrary" */;
 			buildPhases = (
-				9AF5CEAA35753ABCF66B6B70 /* [CP] Check Pods Manifest.lock */,
 				B8E7CEBC1EEEA0C3005EFBC9 /* Sources */,
 				B8E7CEBD1EEEA0C3005EFBC9 /* Frameworks */,
 				B8E7CEBE1EEEA0C3005EFBC9 /* Resources */,
-				11576943968F03935BFC6CA1 /* [CP] Embed Pods Frameworks */,
-				A2A07C3A42A5EF828573F7B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,54 +156,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		11576943968F03935BFC6CA1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AF5CEAA35753ABCF66B6B70 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A2A07C3A42A5EF828573F7B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8E7CEBC1EEEA0C3005EFBC9 /* Sources */ = {
@@ -350,7 +275,6 @@
 		};
 		B8E7CED81EEEA0C3005EFBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83BA66347EF50BF092B9F439 /* Pods-NBPhotoLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -364,7 +288,6 @@
 		};
 		B8E7CED91EEEA0C3005EFBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9235C433FAB87FB8E720EFEA /* Pods-NBPhotoLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
