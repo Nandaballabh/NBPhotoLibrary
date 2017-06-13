@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86AB41817CDD6CEF3BA05FF7 /* libPods-NBPhotoLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73483A483F25303C308EAB01 /* libPods-NBPhotoLibrary.a */; };
 		B8E7CEC51EEEA0C3005EFBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC41EEEA0C3005EFBC9 /* main.m */; };
 		B8E7CEC81EEEA0C3005EFBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC71EEEA0C3005EFBC9 /* AppDelegate.m */; };
 		B8E7CECB1EEEA0C3005EFBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CECA1EEEA0C3005EFBC9 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3751F2AD3C60F365C45F151F /* Pods-NBPhotoLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPhotoLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		73483A483F25303C308EAB01 /* libPods-NBPhotoLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBPhotoLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24B8A19B7A484484B83BBE5 /* Pods-NBPhotoLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBPhotoLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		B8E7CEC01EEEA0C3005EFBC9 /* NBPhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E7CEC41EEEA0C3005EFBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8E7CEC61EEEA0C3005EFBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AB41817CDD6CEF3BA05FF7 /* libPods-NBPhotoLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3125FF406E212A7F11A9F4C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A24B8A19B7A484484B83BBE5 /* Pods-NBPhotoLibrary.debug.xcconfig */,
+				3751F2AD3C60F365C45F151F /* Pods-NBPhotoLibrary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FB717D7413A9DAC80685A7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73483A483F25303C308EAB01 /* libPods-NBPhotoLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8E7CEB71EEEA0C3005EFBC9 = {
 			isa = PBXGroup;
 			children = (
 				B8E7CEC21EEEA0C3005EFBC9 /* NBPhotoLibrary */,
 				B8E7CEC11EEEA0C3005EFBC9 /* Products */,
+				3125FF406E212A7F11A9F4C3 /* Pods */,
+				7FB717D7413A9DAC80685A7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8E7CED71EEEA0C3005EFBC9 /* Build configuration list for PBXNativeTarget "NBPhotoLibrary" */;
 			buildPhases = (
+				823BEC2BF68FF1E4B8E0B4B2 /* [CP] Check Pods Manifest.lock */,
 				B8E7CEBC1EEEA0C3005EFBC9 /* Sources */,
 				B8E7CEBD1EEEA0C3005EFBC9 /* Frameworks */,
 				B8E7CEBE1EEEA0C3005EFBC9 /* Resources */,
+				65D1EDEEC7CDF3891D2F8FE3 /* [CP] Embed Pods Frameworks */,
+				5902A75006BFB9DC4CD58BAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +178,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5902A75006BFB9DC4CD58BAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65D1EDEEC7CDF3891D2F8FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBPhotoLibrary/Pods-NBPhotoLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823BEC2BF68FF1E4B8E0B4B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8E7CEBC1EEEA0C3005EFBC9 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		B8E7CED81EEEA0C3005EFBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24B8A19B7A484484B83BBE5 /* Pods-NBPhotoLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -283,6 +359,7 @@
 		};
 		B8E7CED91EEEA0C3005EFBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3751F2AD3C60F365C45F151F /* Pods-NBPhotoLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
