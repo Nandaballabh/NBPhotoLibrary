@@ -1,7 +1,7 @@
 # NBPhotoLibrary
 Click and choose Photo and provides the cropping feature using RSKImageCropper libraryFor 
 
-Add below line to podfile to integrete with PODS
+Add below line to podfile to integrate with PODS
    
     pod 'NBPhotoLibrary' 
 # Code Example 
