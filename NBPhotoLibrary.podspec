@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author             = { "Nanda Ballabh" => "nandaballabh.kec08@gmail.com" }
   s.platform     = :ios, "7.0"
   s.license      = { :type => 'Apache License 2.0', :file => 'LICENSE' }
-  s.source       = { :git => "https://github.com/Nandaballabh/NBPhotoLibrary.git",:tag => s.version.to_s}
+  s.source       = { :git => "https://github.com/Nandaballabh/NBPhotoLibrary.git",:tag => '1.0'}
   s.requires_arc = true
   s.source_files = 'NBPhotoLibrary/NBPhotoLibrary/*'
   s.dependency "RSKImageCropper"
