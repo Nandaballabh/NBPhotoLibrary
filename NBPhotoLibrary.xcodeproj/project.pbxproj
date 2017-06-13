@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B86BE20F1EEFFA3C007DE0EA /* PhotoLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B86BE20E1EEFFA3C007DE0EA /* PhotoLibraryManager.m */; };
 		B8E7CEC51EEEA0C3005EFBC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC41EEEA0C3005EFBC9 /* main.m */; };
 		B8E7CEC81EEEA0C3005EFBC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CEC71EEEA0C3005EFBC9 /* AppDelegate.m */; };
 		B8E7CECB1EEEA0C3005EFBC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E7CECA1EEEA0C3005EFBC9 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B86BE20D1EEFFA3C007DE0EA /* PhotoLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryManager.h; sourceTree = "<group>"; };
+		B86BE20E1EEFFA3C007DE0EA /* PhotoLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryManager.m; sourceTree = "<group>"; };
 		B8E7CEC01EEEA0C3005EFBC9 /* NBPhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E7CEC41EEEA0C3005EFBC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8E7CEC61EEEA0C3005EFBC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		B8E7CEDB1EEEA0F3005EFBC9 /* NBPhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B86BE20D1EEFFA3C007DE0EA /* PhotoLibraryManager.h */,
+				B86BE20E1EEFFA3C007DE0EA /* PhotoLibraryManager.m */,
 			);
 			path = NBPhotoLibrary;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			files = (
 				B8E7CECB1EEEA0C3005EFBC9 /* ViewController.m in Sources */,
 				B8E7CEC81EEEA0C3005EFBC9 /* AppDelegate.m in Sources */,
+				B86BE20F1EEFFA3C007DE0EA /* PhotoLibraryManager.m in Sources */,
 				B8E7CEC51EEEA0C3005EFBC9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
