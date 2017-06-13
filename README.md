@@ -1,11 +1,16 @@
 # NBPhotoLibrary
 Click and choose Photo and provides the cropping feature using RSKImageCropper libraryFor 
 
-pod 'NBPhotoLibrary' to add to podfile
+Add below line to podfile to integrete with PODS
+   
+    pod 'NBPhotoLibrary' 
+# Code Example 
+    #import "PhotoLibraryManager.h"
 
-Code Example 
-#import "PhotoLibraryManager.h"
-Add Delegate PhotoLibraryManagerDelegate
+Add Delegate 
+
+    <PhotoLibraryManagerDelegate>
+
 Add below line to use lib 
 
     PhotoLibraryManager * photoLibrary = [PhotoLibraryManager instance];
